@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+
+</head>
+<body>
+    <section class='slide-show'></section>
+    <section class='image-gallery'>
+        <article>
+            <img src="static/img/image1.jpg" />
+            <h2>Een pakkende titel</h2>
+            <p>Er zijn vele variaties van passages van Lorem Ipsum beschikbaar..</p>
+            <button onclick="myFunction(event)"> Show more content </button>
+        </article>
+        <article>
+            <img src="static/img/image2.jpg" />
+            <h2>Test</h2>
+            <p>Bit of details</p>
+        </article>
+
+        <article>
+                <div class='article-image'>
+                    <img src="static/img/image2.png"/>
+                </div>
+                <h2>Test</h2>
+                <p>Bit of details</p>
+            </article>
+
+            <article>
+                <img src="static/img/image2.gif" />
+                <h2>Een pakkende titel</h2>
+                <p>Er zijn vele variaties van passages van Lorem Ipsum beschikbaar..</p>
+            </article>
+            <article>
+                <img src="static/img/image4.png" />
+                <h2>Test</h2>
+                <p>Bit of details</p>
+            </article>
+    
+            <article>
+                <img src="static/img/image6.png" />
+                <h2>Test</h2>
+                <p>Bit of details</p>
+            </article>
+
+        <dialog id="myDialog">This is an open dialog window</dialog>
+
+<script>
+function myFunction(event) {
+//    console.log(event.target.parentNode.getElementsByTagName('img')[0].style.height='50px')
+   console.log(event.target.parentNode.style.height='90vh')
+}
+</script>
+    </section>
+    <script src="static/js/site.js"></script>
+</body>
+</html>
