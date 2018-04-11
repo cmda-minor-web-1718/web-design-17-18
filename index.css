@@ -1,7 +1,8 @@
 body {
+  font-family: 'Noto Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: lightgrey;
+  background-color: white;
 }
 
 header {
@@ -47,4 +48,30 @@ main ul li  {
 main ul li a img {
   max-width: 30vw;
   max-height: 22vh;
+}
+
+
+/* detail page */
+
+.detail_page {
+  padding: 0;
+  background-color: white;
+}
+
+
+.detail_image {
+  width: 100vw;
+}
+
+main .tags{
+  display: flex;
+  flex-direction: row;
+  max-width: 30em;
+  flex-wrap: wrap;
+  padding: 0 .6em 0 .6em;
+}
+
+.detail_page section {
+  max-width: 40em;
+  padding: 0 .5em 0 .5em;
 }
