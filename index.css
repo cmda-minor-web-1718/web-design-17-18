@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+header {
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+nav ul li {
+  padding: 1em;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+main {
+  padding: 0.4em;
+}
+
+main ul li  {
+  margin-left: 0.39em;
+  max-height: 22vh;
+}
+
+main ul li a img {
+  max-width: 30vw;
+  max-height: 22vh;
+}
