@@ -1,0 +1,273 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-family: "Lato Light";
+  font-size: 3em;
+}
+
+#wrapper{
+  margin: 1em;
+  z-index: 0;
+  /* display: flex; */
+}
+
+#wrapper img{
+  width: 100%;
+  padding: 1em;
+  cursor: pointer;
+}
+
+/* #wrapper img:hover{
+  transform:scale(1.1);
+} */
+
+.image-wrap{
+  width: 33%;
+  width: 33%;
+  display: inline-block;
+  cursor: pointer;
+    transition: all 1s ease;
+}
+
+.image-wrap:hover{
+  transform:scale(1.1);
+  /* box-shadow:         0px 0px 30px 0px rgba(0, 255, 0, 0.67); */
+}
+
+.image-wrap p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-left: 1em;
+  margin-top: 0;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.overlay{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.67);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fade-out{
+  animation: fadeout;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+
+.no-scroll{
+  overflow-y: hidden;
+}
+
+span{
+  width: 1.5em;
+  height: 1.5em;
+  background-color: #FFFFFF;
+  position: absolute;
+  z-index: 3;
+  border-radius: 50%;
+  font-size: 2em;
+  color: #000000;
+  cursor: pointer;
+  right: 0;
+}
+
+span:hover{
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: 1s ease;
+}
+
+section{
+  width: 60em;
+  height: 40em;
+  margin: 0 auto;
+  padding-top: 1em;
+  z-index: 1;
+}
+
+.none{
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  width: 25%;
+}
+
+.slider-container{
+  height: 70%;
+  width: 50%;
+  position: relative;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+footer{
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  bottom: 190px;
+}
+
+footer label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .2em 1em;
+}
+
+footer label:hover{
+  background: red;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 0;
+  /* padding: 8em 1em 0; */
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
+}
+
+/* .text-overlay{
+  display: none;
+} */
+
+.overlay p{
+  color: #FFFFFF;
+  position: absolute;
+  background: black;
+  bottom: -190px;
+  /* height: 12em; */
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -142px;
+}
+
+/* .slide:hover .text-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.67);
+  display: flex;
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .slide:hover .text-overlay p{
+  display: none;
+}
+
+.slide:hover .text-overlay p{
+  display: block;
+  color: #FFFFFF;
+} */
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 1;
+  transition: left .65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("https://picsum.photos/1600/900/?gravity=east");
+    max-height: 70%;
+}
+.slide-2 {
+  background-image: url("https://picsum.photos/1600/900/?space=east");
+      max-height: 70%;
+}
+.slide-3 {
+  background-image: url("https://picsum.photos/1600/900/");
+}
+.slide-4 {
+  background-image: url("https://picsum.photos/1600/900/?cat");
+}
+.slide-5 {
+  background-image: url("https://picsum.photos/1600/900/?mouse=east");
+}
+.slide-6 {
+  background-image: url("https://picsum.photos/1600/900/?laptop=east");
+}
+.slide-7 {
+  background-image: url("https://picsum.photos/1600/900/?beer");
+}
+.slide-8 {
+  background-image: url("https://picsum.photos/1600/900/?wine");
+}
+.slide-9 {
+  background-image: url("https://picsum.photos/1600/900/?mask");
+}
+.slide-10 {
+  background-image: url("https://picsum.photos/1600/900/?spider");
+}
+.slide-11 {
+  background-image: url("https://picsum.photos/1600/900/?human");
+}
+.slide-12 {
+  background-image: url("https://picsum.photos/1600/900/?lion");
+}
+.slide-13 {
+  background-image: url("https://picsum.photos/1600/900/?penguin");
+}
+.slide-14 {
+  background-image: url("https://picsum.photos/1600/900/?phone");
+}
+.slide-15 {
+  background-image: url("https://picsum.photos/1600/900/?subway");
+}
+.slide-16 {
+  background-image: url("https://picsum.photos/1600/900/?lol");
+}
+
+@media only screen and (max-width: 900px) {
+  #wrapper img{
+    width: 100%;
+    }
+
+  .slider-container{
+    width: 90%;
+  }
+}
