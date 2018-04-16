@@ -5,19 +5,14 @@
 
 .main-menu li {
     list-style: none;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid rgba(255,255,255,.225);
+    position: relative;
 }
 
 .category-view {
     display:inline-block;
 }
 
-
-
-.category-view img {
-    height: 1.5em;
-    width: 1.5em;
-}
 
 .category-view h2 {
     display: inline-block;
@@ -28,29 +23,78 @@ svg g {
 }
 
 
-li a {
-    padding: 0.1em;
+.nav li a {
+    padding: 1.1em;
     display: block;
+    
 }
 
 
-li a:hover {
+.nav li a:hover {
     text-decoration: none;
-    color: purple;
-    border-left: 5px solid olive;
+
 }
+
+.nav li a:after {
+    content: '';
+    height: 100%;
+    left: -19px; 
+    right: 0;
+    top: 10px;
+    width: 0; 
+    transition: all 0.3s ease .1s;  
+    position: absolute;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+
+}
+
+.nav li a:hover:after{
+     width: 2.3%; 
+     height: 80%;
+     vertical-align: middle;
+     background-color: #A8D0E6;
+    }
+
 
 
 ol li {
     display: inline-block;
 }
 
+.dot {
+  height: .8em;
+  width: .8em;
+  background-color: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  left: 2.4em;
+  top: 2.5em;
+}
+
+.green {
+    background-color: rgba(30,190,165,0.96);
+}
+
 body {
     display: grid;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
     grid-template-columns: 1fr 4fr;
     margin: 0;
     padding: 0;
+    word-break: break-word;
+    word-wrap: break-word;
+    /* color: rgba(0,0,0,.84); */
+    color: #FFFFFF;
+    font-size: 1.2em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tech-label {
+    color: #FFFFFF;
 }
 
 .user-menu a {
@@ -59,28 +103,52 @@ body {
 
 .nav {
     grid-column: 1;
-    background-color: gray;
+    background-color: #F76C6C;
     height: 100vh;
+    padding: 1em;
 }
+
 
 .thread-list {
     width: 100%;
 
+
 }
 
 .thread-view {
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+
 }
 
-.thread-view img {
+.category-icon {
     height: 1em;
     width: 1em;
 }
 
+.user-preview {
+    align-self: center;
+    position: relative;
+    justify-self: center;
+}
+
+.user-preview img {
+    height: 3.2em;
+    width: 3.2em;
+    border-radius: 50%;
+}
+
+
 .thread-view h3 {
     display: inline-block;
+}
+
+.thread-details {
+    font-size: .9em;
 }
 
 .thread-view h4 {
@@ -133,7 +201,13 @@ td {
 
 
 
+
 .main-menu {
     padding: 0px;
 }
 
+main {
+    background-color: #24305E;
+    padding: 1.4em;
+
+}

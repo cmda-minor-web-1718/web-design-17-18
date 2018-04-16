@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 </head>
 <body>
@@ -18,20 +19,20 @@
         
         <nav id='main-menu'>
             <h1>Categorieen</h1> 
-            <a href='#'> Skip categorieen</a>
+            <!-- <a href='#'> Skip categorieen</a> --> 
             <ul title='main-menu' class='main-menu'>
                 <li> <a href='#'>
                     <div class='category-view'>
-                           <img src='static/wifi.svg'> </img>
-                            <h2>Technologie</h2> 
+                           <img src='static/wifi.svg' class='category-icon'> </img>
+                            <span class='tech-label'>Technologie</h2> 
                         </div> 
                     </a>
                 </li>
                 <li> 
                     <a href='#'>
                         <div class='category-view'>
-                            <img src='static/wifi.svg'> </img>
-                            <h2>Technologie</h2> 
+                            <img src='static/wifi.svg' class='category-icon'> </img>
+                            <span class='tech-label'>Technologie</h2> 
                         </div> 
                     </a>
                 </li>
@@ -39,74 +40,93 @@
         </nav>
 
     </div>
-
-    <header>
-        <ol class="breadcrumb">
-            <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                <a href="http://www.example.com/" itemprop="url">
-                    <span itemprop="title">Home</span>
-                </a>
-            </li>
-            <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                <a href="http://www.example.com/" itemprop="url">
-                    <span itemprop="title">Threads</span>
-                </a>
-            </li>
-        </ol>
+        <main role='main'>  
+         <!--   <ol class="breadcrumb">
+                <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a href="http://www.example.com/" itemprop="url">
+                        <span itemprop="title">Home</span>
+                    </a>
+                </li>
+                <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a href="http://www.example.com/" itemprop="url">
+                        <span itemprop="title">Threads</span>
+                    </a>
+                </li>
+            </ol> -->
         <h1> Forum </h1>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Categorie</th>                    
-                    <th>Auteur</th>                    
-                    <th>Onderwerp</th>
-                    <th>Laatste activiteit</th>
-                    <th>Reacties</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> Star </td>
-                    <td> Alex met een langenaam </td>
-                    <td> Dit is een willekeurig onderwerp over de actualiteit van onderbroeken en hun use cases, welke, verbazingwekkend genoeg, best groot zijn in variabiliteit </td>
-                    <td> Gister </td>
-                    <td> 459 </td>
-                </tr>
-
-                <tr>
-                    <td> Star </td>
-                    <td> Alex met een langenaam </td>
-                    <td> Dit is een willekeurig onderwerp over de actualiteit van onderbroeken en hun use cases, welke, verbazingwekkend genoeg, best groot zijn in variabiliteit </td>
-                    <td> Gister </td>
-                    <td> 459 </td>
-                </tr>
-            </tbody>
-        </table>
-        <main role='main'>  
         <section class='thread-list'>
+         
             <article class='thread-view'>
-                <img src='static/wifi.svg'> </img><h3> Test </h3> by <h4>Alex</h4>
-                <ul>
-                    <li>User</li> 
-                    <li> replies </li> 
-                    <li><time> 1920/20/3 </time>
-                    </li> <li> by user </li></ul>
+                <div class='user-preview'>
+                    <img src='static/img/abdul_profile_picture.jpg'> 
+                    <span class="dot green"> </span> <br/>
+                    <span> Cascuna </span>
+                    
+                </div>
+                <div>
+                    <img src='static/wifi.svg' class='category-icon'> </img><h3> Why does coffee taste so good? </h3> in <h4>Programmer Wisdom</h4>
+                  
+                    <ul class='thread-details'>
+                        <li> 16 replies &#8226; </li> 
+                        <li> Last reply <time> 1920/20/3 </time> by Frank </li> 
+                    </ul>
+                </div>
             </article>
+             
+            <article class='thread-view'>
+                <div class='user-preview'>
+                    <img src='static/img/abdul_profile_picture.jpg'> 
+                    <span class="dot green"> </span> <br/>
+                    <span> Cascuna </span>
+                    
+                </div>
+                <div>
+                    <img src='static/wifi.svg' class='category-icon'> </img><h3> Why does coffee taste so good? </h3> in <h4>Programmer Wisdom</h4>
+                  
+                    <ul class='thread-details'>
+                        <li> 16 replies &#8226; </li> 
+                        <li> Last reply <time> 1920/20/3 </time> by Frank </li> 
+                    </ul>
+                </div>
+            </article>
+             
+            <article class='thread-view'>
+                <div class='user-preview'>
+                    <img src='static/img/abdul_profile_picture.jpg'> 
+                    <span class="dot green"> </span> <br/>
+                    <span> Cascuna </span>
+                    
+                </div>
+                <div>
+                    <img src='static/wifi.svg' class='category-icon'> </img><h3> Why does coffee taste so good? </h3> in <h4>Programmer Wisdom</h4>
+                  
+                    <ul class='thread-details'>
+                        <li> 16 replies &#8226; </li> 
+                        <li> Last reply <time> 1920/20/3 </time> by Frank </li> 
+                    </ul>
+                </div>
+            </article>
+             
+            <article class='thread-view'>
+                <div class='user-preview'>
+                    <img src='static/img/abdul_profile_picture.jpg'> 
+                    <span class="dot green"> </span> <br/>
+                    <span> Cascuna </span>
+                    
+                </div>
+                <div>
+                    <img src='static/wifi.svg' class='category-icon'> </img><h3> Why does coffee taste so good? </h3> in <h4>Programmer Wisdom</h4>
+                  
+                    <ul class='thread-details'>
+                        <li> 16 replies &#8226; </li> 
+                        <li> Last reply <time> 1920/20/3 </time> by Frank </li> 
+                    </ul>
+                </div>
+            </article>
+            
         </section>
 
-        <section class='thread-list'>
-                <article class='thread-view'>
-                    <img src='static/wifi.svg'> </img><h3> Test </h3> by <h4>Alex</h4>
-                    <ul>
-                        <li>User</li> 
-                        <li> replies </li> 
-                        <li><time> 1920/20/3 </time>
-                        </li> <li> by user </li></ul>
-                </article>
-            </section>
-
-        </header>
 
    
 
