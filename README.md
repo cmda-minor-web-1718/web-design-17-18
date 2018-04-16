@@ -21,3 +21,10 @@ There is always one interaction per screen. The interaction is on overview and y
 ## Made with
 * Html
 * CSS
+
+## Todo
+
+- [ ] Animations
+- [ ] Icons and better interaction
+- [ ] Some more princi.pals
+- [ ] Pleasurability
