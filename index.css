@@ -11,7 +11,10 @@
     opacity: 0;
   }
 }
-
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: 'Noto Sans', sans-serif;
@@ -24,6 +27,20 @@ header {
   background-color: white;
   box-shadow: 2px 2px 10px
 }
+
+header nav > ul {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1em;
+}
+
+
 nav {
   background-color: white;
   box-shadow: 2px 2px 10px;
@@ -31,67 +48,57 @@ nav {
   width: 100vw;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 nav ul {
-  display: flex;
+  display:flex;
   flex-direction: row;
-  list-style: none;
   justify-content: space-between;
-  justify-items: center;
-  margin-left: 1em;
 }
 
-nav ul li {
-  padding: 1em;
-}
 
-main ul {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+nav ul > li {
+  padding: 1.4em;
 }
 
 main {
-  padding: 0;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;   
 }
 
-main ul li  {
-  margin-left: 0.39em;
-  /* max-height: 22vh; */
+section {
+  padding: 2em;
 }
 
-main ul li a img {
-  max-width: 30vw;
-  max-height: 22vh;
+
+/* overview */
+
+.the-overview-page {
+  padding: 4em .4em 0 0em;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.overview > li {
+  padding-left: .5em;
+}
+
+.overview li > a > img {
+  width: 100%;
 }
 
 
 /* detail page */
-
 .detail_page {
-  padding: 0;
-  background-color: white;
+  padding-top:4em;
 }
 
-
-.detail_image {
+.detail_page > img {
   width: 100vw;
-}
-
-main .tags{
-  display: flex;
-  flex-direction: row;
-  max-width: 30em;
-  flex-wrap: wrap;
-  padding: 0 .6em 0 .6em;
 }
 
 .detail_page section {
@@ -99,23 +106,41 @@ main .tags{
   padding: 0 .5em 0 .5em;
 }
 
+/* slideshow */
+
 .navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-section a > button {
+.details_content > h2,p,h3,ul {
+  padding-top: 1em;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tags > li {
+  padding:.3em;
+}
+
+.details_content a > button {
   position: absolute;
   border: none;
   right: 0;
   margin-right: 2em;
-  bottom: 58%;
+  bottom: 47%;
   background-color: green;
   padding: 2em;
   border-radius: 3em;
   box-shadow: 3px 3px 10px;
 }
+
+
 
 
 /*  navigation slideshow*/
@@ -141,6 +166,9 @@ section a > button {
 
 
 /* slideshow */
+.main_slideshow {
+  padding: 0;
+}
 
 
 .background_styles {
@@ -159,8 +187,8 @@ section a > button {
 .slideshow li {
   margin: 0;
   width: 100vw;
-  height: 100vw;
-  margin-top: 26vh;
+  height: 100vh;
+  margin-top: 20vh;
 }
 
 .slideshow li figure {
@@ -169,4 +197,13 @@ section a > button {
 
 .slideshow li figure > img {
   width: 100%;
+}
+
+
+.slideshow li figure > figcaption {
+  font-size: .8em;
+  max-width: 30em; 
+  bottom: 0;
+  color: white;
+  padding: 3em;
 }
