@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,22 +17,24 @@
                 <a href='#'>registreren</a>
         </section>
         
-        <nav id='main-menu'>
-            <h1>Categorieen</h1> 
+        <h1>Categorieen</h1> 
+        <nav id='main-menu' title='Categories' >
             <!-- <a href='#'> Skip categorieen</a> --> 
-            <ul title='main-menu' class='main-menu'>
+            <ul class='main-menu'>
                 <li> <a href='#'>
                     <div class='category-view'>
-                           <img src='static/wifi.svg' class='category-icon'> </img>
-                            <span class='tech-label'>Technologie</h2> 
+                      
+                              <span class='tech-label'>Robotica</h2> 
+                            <div class='thread-count'> 12 Threads </div>
                         </div> 
                     </a>
                 </li>
                 <li> 
                     <a href='#'>
                         <div class='category-view'>
-                            <img src='static/wifi.svg' class='category-icon'> </img>
+                          
                             <span class='tech-label'>Technologie</h2> 
+                            <div class='thread-count'> 9012 Threads </div>
                         </div> 
                     </a>
                 </li>
@@ -40,7 +42,7 @@
         </nav>
 
     </div>
-        <main role='main'>  
+        <main role='main' id='main-content'>  
          <!--   <ol class="breadcrumb">
                 <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
                     <a href="http://www.example.com/" itemprop="url">
@@ -55,82 +57,97 @@
             </ol> -->
         <h1> Forum </h1>
 
-        <section class='thread-list'>
+        <ol class='thread-list' title='most recent threads'>
+            <li class='thread-view'>
+            <a href='#' class='show-thread-detail' onclick='showThreadContent(this)'>
          
-            <article class='thread-view'>
-                <div class='user-preview'>
-                    <img src='static/img/abdul_profile_picture.jpg'> 
-                    <span class="dot green"> </span> <br/>
-                    <span> Cascuna </span>
-                    
+                <div class='user-preview top'>
+                    <div class='user-image-display'> 
+                        <div class='thumbnail-image' style=''> </div> 
+                        <span class="dot green"> </span>
+                    </div>
+                    <div class='name-display'> 
+                        <span class="user-name"> Cascuna </span>
+                        <div class="user-description"> Back-ender. Dabbles in the front-end universe from time to time</div>
+                    </div>
                 </div>
-                <div>
-                    <img src='static/wifi.svg' class='category-icon'> </img><h3> Why does coffee taste so good? </h3> in <h4>Programmer Wisdom</h4>
+                <div class='thread-view-content' itemscope itemtype='http://schema.org/DiscussionForumPosting'>
+                <h3> Why does coffee taste so good? </h3> in Programmer Wisdom
                   
                     <ul class='thread-details'>
                         <li> 16 replies &#8226; </li> 
-                        <li> Last reply <time> 1920/20/3 </time> by Frank </li> 
+                        <li> Last reply on <date> 8 july 2018 </date> <span>by Frank </span> </li> 
                     </ul>
                 </div>
-            </article>
+            </a>
+            </li>
+          <li class='thread-view'>
+            <a href='#' class='show-thread-detail' onclick='showThreadContent(this)'>
+         
+                <div class='user-preview top'>
+                    <div class='user-image-display'> 
+                        <div class='thumbnail-image' style=''> </div> 
+                        <span class="dot green"> </span>
+                    </div>
+                    <div class='name-display'> 
+                        <span class="user-name"> Cascuna </span>
+                        <div class="user-description"> Back-ender. Dabbles in the front-end universe from time to time</div>
+                    </div>
+                </div>
+                <div class='thread-view-content' itemscope itemtype='http://schema.org/DiscussionForumPosting'>
+                <h3> Why does coffee taste so good? </h3> in Programmer Wisdom
+                  
+                    <ul class='thread-details'>
+                        <li> 16 replies &#8226; </li> 
+                        <li> Last reply on <date> 8 july 2018 </date> <span>by Frank </span> </li> 
+                    </ul>
+                </div>
+            </a>
+            </li>
+
+                <li class='thread-view'>
+            <a href='#' class='show-thread-detail' onclick='showThreadContent(this)'>
+         
+                <div class='user-preview top'>
+                    <div class='user-image-display'> 
+                        <div class='thumbnail-image' style=''> </div> 
+                        <span class="dot green"> </span>
+                    </div>
+                    <div class='name-display'> 
+                        <span class="user-name"> Cascuna </span>
+                        <div class="user-description"> Back-ender. Dabbles in the front-end universe from time to time</div>
+                    </div>
+                </div>
+                <div class='thread-view-content' itemscope itemtype='http://schema.org/DiscussionForumPosting'>
+                <h3> Why does coffee taste so good? </h3> in Programmer Wisdom
+                  
+                    <ul class='thread-details'>
+                        <li> 16 replies &#8226; </li> 
+                        <li> Last reply on <date> 8 july 2018 </date> <span>by Frank </span> </li> 
+                    </ul>
+                </div>
+            </a>
+            </li>
              
-            <article class='thread-view'>
-                <div class='user-preview'>
-                    <img src='static/img/abdul_profile_picture.jpg'> 
-                    <span class="dot green"> </span> <br/>
-                    <span> Cascuna </span>
-                    
-                </div>
-                <div>
-                    <img src='static/wifi.svg' class='category-icon'> </img><h3> Why does coffee taste so good? </h3> in <h4>Programmer Wisdom</h4>
-                  
-                    <ul class='thread-details'>
-                        <li> 16 replies &#8226; </li> 
-                        <li> Last reply <time> 1920/20/3 </time> by Frank </li> 
-                    </ul>
-                </div>
-            </article>
-             
-            <article class='thread-view'>
-                <div class='user-preview'>
-                    <img src='static/img/abdul_profile_picture.jpg'> 
-                    <span class="dot green"> </span> <br/>
-                    <span> Cascuna </span>
-                    
-                </div>
-                <div>
-                    <img src='static/wifi.svg' class='category-icon'> </img><h3> Why does coffee taste so good? </h3> in <h4>Programmer Wisdom</h4>
-                  
-                    <ul class='thread-details'>
-                        <li> 16 replies &#8226; </li> 
-                        <li> Last reply <time> 1920/20/3 </time> by Frank </li> 
-                    </ul>
-                </div>
-            </article>
-             
-            <article class='thread-view'>
-                <div class='user-preview'>
-                    <img src='static/img/abdul_profile_picture.jpg'> 
-                    <span class="dot green"> </span> <br/>
-                    <span> Cascuna </span>
-                    
-                </div>
-                <div>
-                    <img src='static/wifi.svg' class='category-icon'> </img><h3> Why does coffee taste so good? </h3> in <h4>Programmer Wisdom</h4>
-                  
-                    <ul class='thread-details'>
-                        <li> 16 replies &#8226; </li> 
-                        <li> Last reply <time> 1920/20/3 </time> by Frank </li> 
-                    </ul>
-                </div>
-            </article>
-            
+           
         </section>
 
 
    
 
     </main>
+    <div id='thread-content' class='thread-content'>
+    <h3> Why does coffee taste so good </h3>
+    <div class='user-content'>
+        <div class='thumbnail-image content-thumbnail' style=''> </div> 
+        <div>
+            <span>Alex van der wal</span>
+            <div>Back-ender. Dabbles in the front-end universe from time to time </div>
+            <div><date> 7 April 2018 </date></div>
+        </div>
+    </div>
+    
+    </div>
     <script src="static/js/main.js"></script>    
 </body>
 </html>
