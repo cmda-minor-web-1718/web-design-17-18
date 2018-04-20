@@ -312,6 +312,7 @@ main {
 
 
 
+
 @media (max-width: 992px) {
     body {
         font-size: 1em;
@@ -366,11 +367,10 @@ main {
     }
 }
 @media (min-width: 993px) {
-    .show-thread-detail {
+    
+    .thread-detail-grid {
         grid-template-columns: 1fr 7fr;
     }
-
-    
 
     .thumbnail-image {
         height: 3.2em;
@@ -382,4 +382,8 @@ main {
     
         justify-self: center;
     }
+}
+.thread-detail-grid .user-preview {
+    padding-left: 1em;
+    padding-bottom: 1em;
 }
