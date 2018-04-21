@@ -11,6 +11,11 @@ function showThreadContent(e) {
         obj.classList.remove("show-caret");
       }
   }
+  var links = document.querySelectorAll(".show-thread-detail");
+  for (link of links) {
+    link.classList.toggle("thread-detail-grid");
+  }
+
   if (document.querySelector(".show-caret")) {
     mainContent.style.setProperty("grid-column", "2/4 ");
     threadContent.style.setProperty("grid-column", "4/ span 5 ");

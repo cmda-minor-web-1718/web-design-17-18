@@ -75,14 +75,17 @@ ol li {
 }
 
 .dot {
-  height: .8em;
-  width: .8em;
+
+width: .6em;
+height: .6em;
   background-color: #bbb;
   border-radius: 50%;
   position: absolute;
-  left: 2.4em;
-  top: 2.5em;
+  top: 1.6em;
+  left: 2.7em;
 }
+
+
 
 .green {
     background-color: rgba(30,190,165,0.96);
@@ -96,7 +99,19 @@ h1 {
     font-size: 1em;
 }
 
+.category-name {
+    color: #ebbaba;
+    font-weight: bold;  
+    transition: .5s;
+}
+
+.category-name:hover {
+    color: #E48282;
+    text-decoration: underline;
+}
+
 body {
+    height: 100vh;
     display: grid;
     line-height: 1.4;
     text-rendering: optimizeLegibility;
@@ -328,62 +343,54 @@ main {
    
     }
 
-    .user-preview {
-        padding-left: 1em;
-        padding-bottom: 1em;
-        display: flex;
-    }
-
-    .user-image-display {
-        margin: auto 0;
-    }
-
-    .name-display {
-        display: flex;
-        flex-direction: column;
-        padding-left: .6em;
-    }
-    .user-name {
-        vertical-align: top;
-    }
-
-   
-
-    .user-description {
-        display: inline-block;
-    }
-
-    .thumbnail-image {
-        display: inline-block;
-        height: 2.2em;
-        width: 2.2em;
-    }
-
-    .dot {
-        top: 2.1em;
-        left: 2.7em;
-        width: .6em;
-        height: .6em;
-    }
 }
+
+
+.user-preview {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    display: flex;
+}
+
+.user-image-display {
+    margin: auto 0;
+}
+
+.name-display {
+    display: flex;
+    flex-direction: column;
+    padding-left: .6em;
+}
+.user-name {
+    vertical-align: top;
+}
+
+
+
+.user-description {
+    display: inline-block;
+}
+
+.thumbnail-image {
+    display: inline-block;
+    height: 2.2em;
+    width: 2.2em;
+}
+
 @media (min-width: 993px) {
     
-    .thread-detail-grid {
+    /* .thread-detail-grid {
         grid-template-columns: 1fr 7fr;
-    }
+    } */
 
-    .thumbnail-image {
+    /* .thumbnail-image {
         height: 3.2em;
         width: 3.2em;
-    }
+    } */
 
-    .user-preview {
-        align-self: center;
-    
-        justify-self: center;
-    }
 }
-.thread-detail-grid .user-preview {
+.thread-detail-grid .user-preview .top{
     padding-left: 1em;
     padding-bottom: 1em;
 }
+
