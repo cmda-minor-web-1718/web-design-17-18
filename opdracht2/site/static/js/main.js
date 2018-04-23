@@ -19,9 +19,14 @@ function showThreadContent(e) {
   if (document.querySelector(".show-caret")) {
     mainContent.style.setProperty("grid-column", "2/4 ");
     threadContent.style.setProperty("grid-column", "4/ span 5 ");
+    threadContent.style.setProperty("width", "100% ");
     threadContent.style.setProperty("display", "flex ");
+    // threadContent.style.setProperty("opacity", 0);
   } else {
     mainContent.style.removeProperty("grid-column");
+    // threadContent.style.removeProperty("0");
+    threadContent.style.setProperty("opacity", 1);
+
     threadContent.style.removeProperty("display");
   }
 }
