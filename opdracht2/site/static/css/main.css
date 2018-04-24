@@ -320,8 +320,23 @@ h3 {
     list-style: none;
     display: block;
     margin: 0;
+    margin: 0;
     padding: 0;
 }
+/* https://rianrietveld.com/2015/04/04/the-screen-reader-text-class-why-and-how/ *
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+  }
 
 .thread-view ul li {
     display: inline-block;
@@ -386,7 +401,6 @@ main {
 
 .user-content {
     display: flex;
-    align-items: center;
     flex-direction: column;
 
 }
@@ -419,7 +433,7 @@ main {
 
 
 .user-description {
-    font-size: .7em;
+    font-size: .9em;
     color: var(--shade-of-blue);
 }
 

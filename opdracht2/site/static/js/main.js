@@ -21,6 +21,7 @@ function showThreadContent(e) {
     threadContent.style.setProperty("grid-column", "4/ span 5 ");
     threadContent.style.setProperty("width", "100% ");
     threadContent.style.setProperty("display", "flex ");
+    threadContent.focus();
     // threadContent.style.setProperty("opacity", 0);
   } else {
     mainContent.style.removeProperty("grid-column");
